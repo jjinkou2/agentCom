@@ -9,7 +9,7 @@ import System.Win32.Com.Automation (IDispatch, outInt32, inVariant, method2,
                    inInt32, method0, inIUnknown, method1, outIDispatch, outString, 
                    Variant, outVariant, method3, inString, outIUnknown, outWord32, 
                    inInt16, outInt16)
-import System.Win32.Com (LIBID, mkLIBID, CLSID, mkCLSID, IID, mkIID, IUnknown)
+import System.Win32.Com -- (LIBID, mkLIBID, CLSID, mkCLSID, IID, mkIID, IUnknown)
 import Data.Int (Int32, Int16)
 import Data.Word (Word32)
 

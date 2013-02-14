@@ -6,6 +6,7 @@ module Excel where
 
 import System.Win32.Com.Automation 
 import System.Win32.Com
+import System.Win32.Com.HDirect.HDirect
 
 libidExcel :: LIBID
 libidExcel = mkLIBID "{00020813-0000-0000-C000-000000000046}"

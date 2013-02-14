@@ -41,7 +41,7 @@ load :: a1
      -> IO (Int32, Int32)
 load vLoadKey =
   method2 "Load"
-          [inInt32 vLoadKey]
+          [inVariant vLoadKey]
           outInt32
           outInt32
 

@@ -13,7 +13,7 @@ import System.Win32.Com (LIBID, mkLIBID, IID, mkIID, invokeAndCheck,
 import System.Win32.Com.Server (ComVTable)
 import Foreign.ForeignPtr (withForeignPtr)
 import Foreign.Ptr (Ptr)
-import System.Win32.Com.HDirect (Flags(..), pow2Series, orList, sizeofPtr, 
+import System.Win32.Com.HDirect.HDirect (Flags(..), pow2Series, orList, sizeofPtr, 
                 allocBytes, readunique, free, doThenFree, marshallref, 
                 marshallEnum32, sizeofForeignPtr, sizeofInt16, writeInt32, 
                 sizeofInt32)

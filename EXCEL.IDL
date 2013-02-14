@@ -29251,7 +29251,7 @@ library Excel
                         [out, retval] ListRow** RHS);
         [propget, helpcontext(0x00010076)]
         HRESULT _stdcall Count([out, retval] long* RHS);
-        [helpcontext(0x000100b5)          custom(0F21F359-AB84-41E8-9A78-36D110E6D2F9, AddEx)]
+        [helpcontext(0x000100b5),          custom(0F21F359-AB84-41E8-9A78-36D110E6D2F9, AddEx)]
         HRESULT _stdcall Add(
                         [in, optional] VARIANT Position, 
                         [in, optional] VARIANT AlwaysInsert, 

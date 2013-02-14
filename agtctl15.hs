@@ -56,7 +56,8 @@ unload characterID =
   method0 "Unload"
           [inString characterID]
 
-load :: String
+load :: (Variant a1)  
+     => String
      -> a1
      -> IAgentCtlCharacters a0
      -> IO (IAgentCtlRequest ())

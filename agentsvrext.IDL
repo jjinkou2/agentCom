@@ -1,0 +1,50 @@
+// Generated .IDL file (by the OLE/COM Object Viewer)
+// 
+// typelib filename: 2
+
+[
+  uuid(D6589123-FC70-11D0-AC94-00C04FD97575),
+  version(2.0),
+  helpstring("Microsoft Agent Server Extensions 2.0")
+]
+library AgentServerExtensions
+{
+    // TLib :     // TLib : OLE Automation : {00020430-0000-0000-C000-000000000046}
+    importlib("stdole2.tlb");
+
+    // Forward declare all types defined in this typelib
+    interface IAgentExtension;
+    interface IAgentExt;
+
+    [
+      odl,
+      uuid(64A89600-E8F1-11D0-AC8E-00C04FD97575),
+      helpstring("IAgentExtension Interface")
+    ]
+    interface IAgentExtension : IUnknown {
+        HRESULT _stdcall SetAgent([in] IUnknown* punkAgent);
+    };
+
+    [
+      odl,
+      uuid(D6589121-FC70-11D0-AC94-00C04FD97575),
+      helpstring("IAgentExt Interface"),
+      dual,
+      oleautomation
+    ]
+    interface IAgentExt : IDispatch {
+        [id(0x60020000)]
+        HRESULT LoadExtension(
+                        [in] long dwClsId0, 
+                        [in] long dwClsId1, 
+                        [in] long dwClsId2, 
+                        [in] long dwClsId3, 
+                        [out] long* pdwID);
+        [id(0x60020001)]
+        HRESULT GetExtension(
+                        [in] long dwID, 
+                        [out] IDispatch** ppdispExtension);
+        [id(0x60020002)]
+        HRESULT UnloadExtension([in] long dwID);
+    };
+};
